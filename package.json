@@ -1,0 +1,28 @@
+{
+  "name": "pagesensors/rate-limiter",
+  "main": "./src/index.js",
+  "author": "Aleksandr Guidrevitch <aguidrevitch@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "npm run lint && npm run cover",
+    "test:prod": "npm run test",
+    "test:only": "mocha --recursive",
+    "test:watch": "npm test -- --watch",
+    "cover": "nyc --check-coverage npm run test:only",
+    "lint": "eslint src test"
+  },
+  "dependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.14.3"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.0",
+    "nyc": "^13.3.0"
+  }
+}
