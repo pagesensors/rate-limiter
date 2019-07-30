@@ -1,11 +1,11 @@
-## Run
+## Install
 
 ```
 docker run --rm -it -w /build -v "$PWD:/build:delegated" node:dubnium yarn
 ```
 
-## Run
+## Test
 
 ```
-docker run --rm -it -w /build -v "$PWD:/build:delegated" node:dubnium yarn
+docker run --rm -it -w /build -v "$PWD:/build:delegated" node:dubnium yarn test
 ```
