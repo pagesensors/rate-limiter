@@ -3,7 +3,7 @@
   "main": "./src/index.js",
   "author": "Aleksandr Guidrevitch <aguidrevitch@gmail.com>",
   "license": "MIT",
-  "version": "0.1",
+  "version": "0.1.0",
   "scripts": {
     "test": "npm run lint && npm run cover",
     "test:prod": "npm run test",
