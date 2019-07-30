@@ -1,5 +1,5 @@
 {
-  "name": "pagesensors/rate-limiter",
+  "name": "rate-limiter",
   "main": "./src/index.js",
   "author": "Aleksandr Guidrevitch <aguidrevitch@gmail.com>",
   "license": "MIT",
