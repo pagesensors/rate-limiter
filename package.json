@@ -1,29 +1,36 @@
 {
-  "name": "rate-limiter",
+  "name": "s3-path-generator",
   "main": "./src/index.js",
-  "author": "Aleksandr Guidrevitch <aguidrevitch@gmail.com>",
+  "author": "Aleksandr Guidrevitch <alex@darwinapps.com>",
   "license": "MIT",
   "version": "0.1.0",
   "scripts": {
-    "test": "npm run lint && npm run cover",
-    "test:prod": "npm run test",
-    "test:only": "mocha --recursive",
-    "test:watch": "npm test -- --watch",
-    "cover": "nyc --check-coverage npm run test:only",
+    "ci": "jest --watchAll",
+    "test": "jest --coverage",
     "lint": "eslint src test"
   },
   "dependencies": {
+  },
+  "devDependencies": {
     "eslint": "^5.16.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^6.0.0",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-prettier": "^3.1.0",
-    "eslint-plugin-react": "^7.14.3"
+    "eslint-plugin-react": "^7.14.3",
+    "jest": "^23.3.0",
+    "jest-cli": "^23.3.0"
   },
-  "devDependencies": {
-    "chai": "^4.2.0",
-    "mocha": "^6.2.0",
-    "nyc": "^13.3.0"
+  "engines": {
+    "node": ">= 8.x.x"
+  },
+  "jest": {
+    "coverageDirectory": "../coverage",
+    "testEnvironment": "node",
+    "rootDir": "./src",
+    "roots": [
+      "../test"
+    ]
   }
 }
